@@ -19,9 +19,9 @@ function App() {
         </a>
       </div>
       <h1>useEffect in Practice</h1>
-      <h2>by Group 1: Kane, Stacy, Wanjiru & Kelvin</h2>
+      <h3>by Group 1: Kane, Stacy, Wanjiru & Kelvin</h3>
       <div className="card">
-        <h2>Real world example: Updating bio page</h2>
+        <h2>Real world example: Updating bio</h2>
         <p>
           This form utilises 'useEffect' to autosave anything that has been
           written within the input fields, with a 5 second delay between input

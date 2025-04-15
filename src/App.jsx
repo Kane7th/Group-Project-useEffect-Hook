@@ -1,11 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Bio from './components/Bio.jsx'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import Bio from "./components/Bio.jsx";
+import "./App.css";
+import PresentationPage from "./components/Presentation.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -20,15 +21,20 @@ function App() {
       <h1>useEffect in Practice</h1>
       <h2>by Group 1: Kane, Stacy, Wanjiru & Kelvin</h2>
       <div className="card">
-        <h2>
-          Real world example: Updating bio page
-        </h2>
+        <h2>Real world example: Updating bio page</h2>
+        <p>
+          This form utilises 'useEffect' to autosave anything that has been
+          written within the input fields, with a 5 second delay between input
+          and autosaves, use cases would be text boxes such as social media
+          posts, mailboxes etc.
+        </p>
         <Bio />
-        <p> This adds a form with an autosave feature that utilises 'useEffect' and adds a 5 second delay before autosaving</p>
-      
+      </div>
+      <div>
+        <PresentationPage />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

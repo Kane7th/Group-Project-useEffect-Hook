@@ -35,6 +35,10 @@ h1 {
   line-height: 1.1;
 }
 
+h2 {
+  font-size: 2.5em;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -52,6 +56,47 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.bio-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.bio-input,
+.bio-textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #555;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+.bio-input:focus,
+.bio-textarea:focus {
+  outline: none;
+  border-color: #b5b9ff;
+  background-color: #2f2f40;
+}
+
+.bio-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+#text-field {
+  outline: none;
+  font-family: inherit;
+  font-size: 1.2em;
 }
 
 @media (prefers-color-scheme: light) {

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import '../index.css';
 
 function Bio() {
   const [formData, setFormData] = useState({
@@ -10,53 +11,32 @@ function Bio() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       console.log('Autosaving form...', formData);
-    }, 5000); // 5 second delay for autosave
+    }, 5000);
 
-    return () => clearTimeout(timeout); // Cleanup to debounce autosave
+    return () => clearTimeout(timeout);
   }, [formData]);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
   return (
-    <form>
+    <form className="bio-form">
       <input
         type="text"
         value={formData.name}
         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
         placeholder="Name"
+        className="bio-input"
       />
       <input
-        type="status"
-        value={formData.email}
+        type="text"
+        value={formData.status}
         onChange={(e) => setFormData({ ...formData, status: e.target.value })}
         placeholder="Status"
+        className="bio-input"
       />
       <textarea
         value={formData.bio}
         onChange={(e) => setFormData({ ...formData, bio: e.target.value })}
         placeholder="Bio"
+        className="bio-textarea"
       />
     </form>
   );

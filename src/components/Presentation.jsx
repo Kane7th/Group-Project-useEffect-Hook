@@ -17,8 +17,7 @@ function PresentationPage() {
         <ul style={{ listStyleType: "none", padding: 0 }}>
           {" "}
           <li>
-            It uses React Hooks (useState, useEffect) Styles are imported from
-            an external CSS file (index.css)
+            It uses React Hooks (useState, useEffect)
           </li>
           <li>Styles are imported from an external CSS file (index.css)</li>
         </ul>

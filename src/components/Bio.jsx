@@ -3,18 +3,42 @@ import React, { useEffect, useState } from 'react';
 function Bio() {
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
+    status: '',
     bio: ''
   });
 
   useEffect(() => {
     const timeout = setTimeout(() => {
       console.log('Autosaving form...', formData);
-    }, 1000);
+    }, 5000); // 5 second delay for autosave
 
     return () => clearTimeout(timeout); // Cleanup to debounce autosave
   }, [formData]);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   return (
     <form>
       <input
@@ -24,10 +48,10 @@ function Bio() {
         placeholder="Name"
       />
       <input
-        type="email"
+        type="status"
         value={formData.email}
-        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-        placeholder="Email"
+        onChange={(e) => setFormData({ ...formData, status: e.target.value })}
+        placeholder="Status"
       />
       <textarea
         value={formData.bio}

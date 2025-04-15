@@ -24,6 +24,8 @@ function App() {
           Real world example: Updating bio page
         </h2>
         <Bio />
+        <p> This adds a form with an autosave feature that utilises 'useEffect' and adds a 5 second delay before autosaving</p>
+      
       </div>
     </>
   )

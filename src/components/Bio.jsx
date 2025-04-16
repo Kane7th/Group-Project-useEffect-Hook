@@ -8,9 +8,20 @@ function Bio() {
     bio: ''
   });
 
+
+  //on first render, load from local storage
+  useEffect(() => {
+    const savedData = localStorage.getItem('bioData');
+    if (savedData) {
+      setFormData(JSON.parse(savedData));
+    }
+  }, []);
+  
+  //after 5sec of not typing, save 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      console.log('Autosaving form...', formData);
+      localStorage.setItem('bioData', JSON.stringify(formData));
+      console.log('Autosaved to localStorage:', formData);
     }, 5000);
 
     return () => clearTimeout(timeout);

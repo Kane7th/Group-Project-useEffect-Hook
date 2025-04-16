@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import Bio from "./components/Bio.jsx";
@@ -6,8 +6,7 @@ import "./App.css";
 import PresentationPage from "./components/Presentation.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  
   return (
     <>
       <div>
@@ -18,6 +17,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
+      
       <h1>useEffect in Practice</h1>
       <h3>by Group 1: Kane, Stacy, Wanjiru & Kelvin</h3>
       <div className="card">

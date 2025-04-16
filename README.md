@@ -1,13 +1,31 @@
-# React + Vite
+# useEffect Practice App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This React application demonstrates how to use the `useEffect` hook in a real-world context. It includes a form that auto-saves user input with a delay and a presentation component explaining how the logic works.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React `useState` and `useEffect` Hooks
+- Auto-saving form data to `localStorage`
+- Debounce pattern with `setTimeout` and `clearTimeout`
+- Clean UI with responsive styling
+- Slide-style presentation explaining the code
 
-## Expanding the ESLint configuration
+## Components
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Group-Project-useEffect-Hook
+- `Bio.jsx`: A form where users can type their name, status, and bio. Data is auto-saved with a delay.
+- `Presentation.jsx`: A walkthrough of how the form and `useEffect` hook function.
+- `App.jsx`: Combines the `Bio` and `PresentationPage` components.
+
+## How to Run
+
+1. Clone the repository
+2. Install dependencies:
+
+   ```bash
+   npm install
+   npm run dev
+
+3. In your browser, update bio, inspect.  
+
+## Licence 
+Group 1: Kane, Wanjiru, Stacy & Kelvin
